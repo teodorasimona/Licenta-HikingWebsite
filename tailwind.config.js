@@ -8,4 +8,8 @@ module.exports = {
     extend: {},
   },
   plugins: [require("flowbite/plugin")],
+  color: {
+    customBlack: "#111111",
+    ctaColor: "#FC4D27",
+  },
 };
