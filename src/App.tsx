@@ -4,6 +4,7 @@ import "./App.css";
 import Layout from "./pages/layout";
 import HomePage from "./pages/home/page";
 import ContactPage from "./pages/contact/page";
+import LoginPage from "./pages/login/page";
 
 function App() {
   return (

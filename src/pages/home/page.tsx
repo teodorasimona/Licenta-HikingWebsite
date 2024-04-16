@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import Layout from "../layout";
+import DespreNoi from "../../components/despre-noi";
+import Cards from "../../components/cards";
+import Footer from "../../components/footer";
 
 export default function HomePage() {
   return (
@@ -13,7 +16,7 @@ export default function HomePage() {
         }}
       >
         <div className="py-4 text-white text-center">
-          <h1 className="mb-4 text-4xl font-bold tracking-wide leading-none ">
+          <h1 className="mb-4 text-6xl font-semibold tracking-wide leading-none ">
             Gaseste noi trasee montane
           </h1>
           <p className="text-xl font-normal">
@@ -55,61 +58,18 @@ export default function HomePage() {
             />
             <button
               type="submit"
-              className="text-white absolute end-2.5 bottom-2.5 bg-cta-color hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2"
+              className="text-white absolute end-2.5 bottom-2.5 bg-red-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-4 py-2"
             >
               Vezi trasee
             </button>
           </div>
         </form>
       </div>
-
-      <div>
-        <p className="text-[33px] pl-36 font-semibold text-white pt-12">
-          Trasee populare langa Brasov
-        </p>
-        <div className="flex justify-between pt-4 p-32">
-          <TrailCard
-            imageUrl="\images\drumul-serpentinelor.webp"
-            title="Mt Tampa via Drumul Serpentinelor"
-            location="Braşov, Braşov, Romania"
-            dificulty="Moderate"
-            rating={4.6}
-            reviewsCount={187}
-          />
-
-          <TrailCard
-            imageUrl="\images\poiana-stanii.webp"
-            title="Poiana Stanii"
-            location="Sacele, Braşov, Romania"
-            dificulty="Moderate"
-            rating={4.3}
-            reviewsCount={169}
-          />
-
-          <TrailCard
-            imageUrl="\images\canionul-7-scari.webp"
-            title="Canionul 7 scari"
-            location="Brasov, Braşov, Romania"
-            dificulty="Moderate"
-            rating={4.5}
-            reviewsCount={101}
-          />
-
-          <TrailCard
-            imageUrl="\images\cabana-caraiman.webp"
-            title="Cabana Caraiman"
-            location="Brasov, Braşov, Romania"
-            dificulty="Moderate"
-            rating={4.1}
-            reviewsCount={88}
-          />
-        </div>
-      </div>
-
-      <div className="flex gap-5 justify-between items-end p-28 bg-orange-100 max-md:flex-wrap max-md:px-5">
+      <Cards />
+      <div className="flex gap-5 justify-between items-end p-12 bg-orange-100 max-md:flex-wrap max-md:px-5">
         <div className="flex flex-col items-center self-start">
           <div className="text-4xl leading-10 text-black">Activitati</div>
-          <div className="flex gap-5 justify-between self-stretch mt-8">
+          <div className="flex gap-5 justify-between self-stretch mt-4">
             <div className="flex justify-center items-center my-auto">
               <img
                 loading="lazy"
@@ -137,18 +97,69 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      <DespreNoi />;
+      <div className="flex flex-col px-5">
+        <div className="w-full text-4xl leading-10 text-white max-md:max-w-full">
+          Cele mai bune privelisti din apropiere
+        </div>
+        <div className="mt-7 w-full max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow text-base leading-5 text-white max-md:mt-6">
+                <div className="shrink-0 rounded-xl bg-zinc-300 h-[236px]" />
+                <div className="mt-8">
+                  Mt Tampa via Drumul Serpentinelor
+                  <br />
+                  Braşov, Braşov, Romania
+                  <br />
+                  Moderate•4.6(187)
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow text-base leading-5 text-white max-md:mt-6">
+                <div className="shrink-0 rounded-xl bg-zinc-300 h-[236px]" />
+                <div className="mt-8">
+                  Mt Tampa via Drumul Serpentinelor
+                  <br />
+                  Braşov, Braşov, Romania
+                  <br />
+                  Moderate•4.6(187)
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow text-base leading-5 text-white max-md:mt-6">
+                <div className="shrink-0 rounded-xl bg-zinc-300 h-[236px]" />
+                <div className="mt-8">
+                  Mt Tampa via Drumul Serpentinelor
+                  <br />
+                  Braşov, Braşov, Romania
+                  <br />
+                  Moderate•4.6(187)
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+              <div className="flex flex-col grow text-base leading-5 text-white max-md:mt-6">
+                <div className="shrink-0 rounded-xl bg-zinc-300 h-[236px]" />
+                <div className="mt-8">
+                  Mt Tampa via Drumul Serpentinelor
+                  <br />
+                  Braşov, Braşov, Romania
+                  <br />
+                  Moderate•4.6(187)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Footer />;
     </div>
   );
 }
-
-interface TrailCardProps {
-  imageUrl: string;
-  title: string;
-  location: string;
-  dificulty: string;
-  rating: number;
-  reviewsCount: number;
-}
+<Footer />;
 
 interface ActivitiesProps {
   imageUrl: string;
@@ -163,39 +174,6 @@ function Activities({ imageUrl, title }: ActivitiesProps) {
         className="shrink-0 rounded-full h-[180px] w-[180px]"
       />
       <div className="self-center mt-6">{title}</div>
-    </div>
-  );
-}
-
-function TrailCard({
-  imageUrl,
-  title,
-  location,
-  dificulty,
-  rating,
-  reviewsCount,
-}: TrailCardProps) {
-  return (
-    <div className="w-1/4 p-4 max-w-sm  rounded-lg   ">
-      <a href="#">
-        <img
-          className="rounded-lg w-full h-[236px] object-cover"
-          src={imageUrl}
-          alt="Drumul Serpentinelor"
-        />
-      </a>
-      <div className="p-5">
-        <a href="#">
-          <h5 className="mb-2 text-1x1 font-bold tracking-tight text-white">
-            {title}
-          </h5>
-        </a>
-
-        <p className="mb-3 font-normal text-white">
-          {location} <br />
-          {dificulty} • {rating.toFixed(1)}({reviewsCount})
-        </p>
-      </div>
     </div>
   );
 }
