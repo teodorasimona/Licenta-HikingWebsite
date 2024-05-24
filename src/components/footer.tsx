@@ -1,8 +1,12 @@
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
 export default function Footer() {
   return (
-    <footer className="flex justify-center items-center px-36  bg-lime-950 max-md:px-5 w-full bottom-0  ">
+    <footer className="flex justify-center items-center px-36 bg-lime-950 max-md:px-5 w-full   ">
       <div className="mt-7 w-full max-md:max-w-full">
-        <div className=" flex gap-5 py-12 max-md:flex-col max-md:gap-0">
+        <div className=" flex gap-5 py-6 max-md:flex-col max-md:gap-0">
           <div className=" flex flex-col w-1/3 max-md:ml-0 max-md:w-full ">
             <img className="h-6" src="images/logo.svg" />
           </div>
@@ -11,13 +15,13 @@ export default function Footer() {
               <h4 className="pb-4 text-lg">Urmărește-ne</h4>
               <div className="flex gap-3 text-white">
                 <a href="#" className=" ">
-                  <img className=" h-6" src="\images\instagram.svg"></img>
+                  <InstagramIcon />
                 </a>
                 <a href="#" className="">
-                  <img className=" h-6 " src="\images\facebook.svg"></img>
+                  <FacebookIcon />
                 </a>
                 <a href="#" className="">
-                  <img className="h-6" src="\images\youtube.svg"></img>
+                  <YouTubeIcon />
                 </a>
               </div>
             </div>

@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 export default function Layout() {
   return (
     <div>
-      <nav className="bg-black absolute top-0 left-0 right-0 z-10 bg-transparent pl-12">
+      <nav className="bg-black absolute top-0 left-0 right-0 z-10 bg-transparent mx-2">
         <div className=" flex flex-wrap items-center justify-between mx-auto p-4 ">
           <a
             href="http://localhost:3000"
@@ -37,11 +37,11 @@ export default function Layout() {
               />
             </svg>
           </button> */}
-          <div className="hidden w-full md:block md:w-auto pr-12 ">
+          <div className="w-full md:block md:w-auto ">
             <ul className="bg-transparent font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   className="block py-2 px-3 text-red-500  rounded md:bg-transparent md:p-0"
                   aria-current="page"
                 >
@@ -50,8 +50,8 @@ export default function Layout() {
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="explore"
+                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-red-700 md:p-0"
                 >
                   Exploreaza
                 </a>
@@ -59,7 +59,7 @@ export default function Layout() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-red-700 md:p-0"
                 >
                   Despre noi
                 </a>
@@ -67,26 +67,26 @@ export default function Layout() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:p-0 hover:text-red-700 "
                 >
                   Profil
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="contact"
+                  className="block py-2 px-3 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-red-700 md:p-0"
                 >
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-          <div className="flex gap-5 items-start text-base font-bold pr-12">
-            <div className="justify-center p-2.5 rounded-full bg-stone-200 text-neutral-600">
+          <div className="flex gap-5 items-start font-semibold ">
+            <div className="text-md justify-center py-1.5 px-3 rounded-md bg-stone-200 hover:text-red-700  text-neutral-600">
               Intra in cont
             </div>
-            <div className="justify-center p-2.5 text-white bg-red-500 rounded-full ">
+            <div className="text-md justify-center py-1.5 px-3 text-white bg-red-500 hover:text-red-700 rounded-md ">
               Creare cont
             </div>
           </div>

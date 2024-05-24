@@ -1,0 +1,2 @@
+root: D:\licenta-react-typescript\nvm
+path: D:\licenta-react-typescript
