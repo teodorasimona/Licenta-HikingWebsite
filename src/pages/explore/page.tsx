@@ -5,10 +5,11 @@ import { AppBar, Toolbar, Box, Typography, InputBase } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
 import Map from "../../components/map";
+import TrailsList from "../../components/TrailsList/List";
 
 export default function ExplorePage() {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       <AppBar position="static">
         <Toolbar className="flex justify-between bg-white">
           <Box display="flex" className="space-x-4">
@@ -29,9 +30,16 @@ export default function ExplorePage() {
               />
             </div>
           </Box>
-          <Map />
         </Toolbar>
       </AppBar>
+      <div className=" grid grid-cols-4">
+        <div className="col-span-1">
+          <TrailsList />
+        </div>
+        <div className="col-span-3">
+          <Map />
+        </div>
+      </div>
     </div>
   );
 }
