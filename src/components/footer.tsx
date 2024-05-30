@@ -4,49 +4,43 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center items-center px-36 bg-lime-950 max-md:px-5 w-full   ">
-      <div className="mt-7 w-full max-md:max-w-full">
-        <div className=" flex gap-5 py-6 max-md:flex-col max-md:gap-0">
-          <div className=" flex flex-col w-1/3 max-md:ml-0 max-md:w-full ">
-            <img className="h-6" src="images/logo.svg" />
-          </div>
-          <div className="flex flex-col ml-12 w-1/3 max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col text-white max-md:mt-10 max-md:max-w-full">
-              <h4 className="pb-4 text-lg">Urmărește-ne</h4>
-              <div className="flex gap-3 text-white">
-                <a href="#" className=" ">
-                  <InstagramIcon />
-                </a>
-                <a href="#" className="">
-                  <FacebookIcon />
-                </a>
-                <a href="#" className="">
-                  <YouTubeIcon />
-                </a>
-              </div>
-            </div>
-          </div>
+    <footer className="bg-lime-950 text-white w-full">
+      <div className="flex flex-col md:flex-row justify-between items-center px-5 md:px-36 py-6">
+        <div className="flex justify-center md:justify-start w-full mb-6 md:mb-0">
+          <img className="h-6" src="images/logo.svg" alt="Logo" />
+        </div>
 
-          <div className="flex flex-col w-1/3 max-md:ml-0 max-md:w-full text-white">
-            <h4 className="text-lg pb-4">Linkuri utile</h4>
-            <ul className="list-unstyled footer-li">
-              <li>
-                <a href="#">Termeni și condiții</a>
-              </li>
-              <li>
-                <a href="#">Politică de cookies</a>
-              </li>
-            </ul>
+        <div className="flex flex-col items-center md:items-start w-full mb-6 md:mb-0">
+          <h4 className="text-lg pb-4">Urmărește-ne</h4>
+          <div className="flex gap-3">
+            <a href="#" aria-label="Instagram">
+              <InstagramIcon />
+            </a>
+            <a href="#" aria-label="Facebook">
+              <FacebookIcon />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <YouTubeIcon />
+            </a>
           </div>
         </div>
 
-        <div className=" text-center py-3 text-white">
-          ©{" "}
-          <span className="current-year" id="currentYear">
-            2024
-          </span>{" "}
-          Trailventure. Toate drepturile rezervate.
+        <div className="flex flex-col items-center md:items-start w-full">
+          <h4 className="text-lg pb-4">Linkuri utile</h4>
+          <ul className="list-none">
+            <li>
+              <a href="#">Termeni și condiții</a>
+            </li>
+            <li>
+              <a href="#">Politică de cookies</a>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div className="text-center py-3">
+        © <span id="currentYear">2024</span> Trailventure. Toate drepturile
+        rezervate.
       </div>
     </footer>
   );
