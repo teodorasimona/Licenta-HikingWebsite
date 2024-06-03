@@ -10,10 +10,10 @@ import { getTrailsData } from "./api";
 
 function App() {
   const [trails, setTrails] = useState([]);
+
   useEffect(() => {
     getTrailsData().then((data) => {
-      console.log(data);
-      setTrails(data);
+      console.log("data: " + JSON.stringify(data, null, 2));
     });
   }, []);
   return (

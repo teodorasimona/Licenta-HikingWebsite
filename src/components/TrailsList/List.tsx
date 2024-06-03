@@ -12,10 +12,9 @@ import {
 } from "@mui/material";
 import TrailsDetails from "../TrailsDetails/TrailsDetails";
 
-// Definește tipul Trail
 interface Trail {
   name: string;
-  location?: string; // Adaugă alte proprietăți necesare, dacă există
+  location?: string;
 }
 
 const TrailsList = () => {

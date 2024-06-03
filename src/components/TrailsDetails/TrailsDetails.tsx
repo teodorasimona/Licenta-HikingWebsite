@@ -1,13 +1,10 @@
-// src/components/TrailsDetails/TrailsDetails.tsx
 import React from "react";
 
-// Definește tipul Trail
 interface Trail {
   name: string;
-  location?: string; // Adaugă alte proprietăți necesare, dacă există
+  location?: string;
 }
 
-// Definește tipul pentru props
 interface TrailsDetailsProps {
   trail: Trail;
 }
