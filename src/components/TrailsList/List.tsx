@@ -1,4 +1,5 @@
-// src/components/TrailsList/List.tsx
+"use client";
+
 import React, { useState } from "react";
 import {
   Typography,

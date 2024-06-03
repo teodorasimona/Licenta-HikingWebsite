@@ -1,3 +1,4 @@
+"use client";
 import React, { useState, useEffect } from "react";
 import GoogleMapReact from "google-map-react";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
